@@ -1,0 +1,140 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #3f4954;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+
+
+
+
+
+.navbar {
+    padding: 0rem;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+}
+.navbar-nav li {
+    padding: 3px;
+}
+
+.nav-link {
+    font-size: 1.2rem !important;
+
+}
+.nav-link li:hover {
+    background-color: black;
+}
+
+.nav-item .nav-link:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transition: 0.5s;
+    content: "";
+    transform-origin: left;
+    background-color: white;
+}
+.nav-item .nav-link:hover after {
+    transform-origin: right;
+    transform: scaleX(1);
+}
+
+.navbar-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    padding: 0px 20px;
+    transition: 0.5s;
+    animation: scroll 0.6s 1;
+}
+
+.navbar-brand {
+    text-transform: capitalize;
+    font-size: 27px;
+    color: black;
+}
+
+.container-fluid .navbar-brand .logo {
+    width: 40%;
+}
+
+.bttn {
+    border: transparent;
+    text-align: center;
+    background: var(--sky);
+    color: black;
+    padding: .4rem .83rem;
+    margin: 0 .5rem;
+}
+
+.bttn:hover {
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
+.card-title {
+    margin: 25px;
+}
+
+.card .card-body h4 {
+    padding: 25px;
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.divider-text span {
+    padding: 7px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405090!important;
+    color: white!important;
+}
+
+.btn-gmail {
+    background-color: #ea4335!important;
+    color: white!important;
+}
